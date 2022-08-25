@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Test</title>
+
+    <link rel="stylesheet" href="styles.css" />
+    <script type="module" src="./utility/convertPairToObject.js" defer></script>
+    <script type="module" src="./utility/createOptionFromObject.js" defer></script>
+    <script type="module" src="./utility/inputIsInvalid.js" defer></script>
+    <script type="module" src="./script.js" defer></script>
+    <script type="module" src="./test.js" defer></script>
+    <noscript>Your browser does not support JavaScript!</noscript>
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap");
+    </style>
+  </head>
+  <body>
+    <main class="main">
+      <section class="card">
+        <h1 class="title">Test</h1>
+        <div class="content">
+          <form class="content__block form">
+            <label for="add-pair" class="content__label">Name/Value Pair</label>
+            <div class="content__row-wrapper">
+              <input
+                class="content__input"
+                name="add-pair"
+                type="text"
+                placeholder=""
+                value=""
+              />
+              <menu class="content__column-wrapper">
+                <button class="content__button add" role="button" type="submit">
+                  Add
+                </button>
+              </menu>
+            </div>
+          </form>
+          <article class="content__block list">
+            <label for="pair-list" class="content__label"
+              >Name/Value Pair List</label
+            >
+            <div class="content__row-wrapper">
+              <select
+                class="content__output"
+                name="pair-list"
+                multiple
+                size="0"
+              ></select>
+              <menu class="content__column-wrapper">
+                <button class="content__button" id="sortByName" role="button">
+                  Sort by Name
+                </button>
+                <button class="content__button" id="sortByValue" role="button">
+                  Sort by Value
+                </button>
+                <button class="content__button" id="delete" role="button">
+                  Delete
+                </button>
+                <button class="content__button" id="showXML" role="button">Show XML</button>
+              </menu>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+    <footer class="footer" style="background-color: white"></footer>
+  </body>
+</html>
